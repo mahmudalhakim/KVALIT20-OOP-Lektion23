@@ -21,19 +21,33 @@ public class Person {
 
   // Konstruktor
 
+  /**
+   * Default konstruktor
+   */
   public Person() {
     namn = "";
     adress = "";
     personnummer = "";
   }
 
+  /**
+   * En egen konstruktor
+   *
+   * @param namn
+   * @param adress
+   * @param personnummer
+   */
   public Person(String namn, String adress, String personnummer) {
     setNamn(namn);
     setAdress(adress);
     setPersonnummer(personnummer);
   }
 
-  // Setters
+  /**
+   * Sätter namnet
+   *
+   * @param namn
+   */
   public void setNamn(String namn) {
 
     if (namn == null)
@@ -46,15 +60,29 @@ public class Person {
 
   }
 
-
+  /**
+   * Hämtar namnet
+   *
+   * @return
+   */
   public String getNamn() {
     return namn;
   }
 
+  /**
+   * Hämtar adressen
+   *
+   * @return
+   */
   public String getAdress() {
     return adress;
   }
 
+  /**
+   * Sätter adressen
+   *
+   * @param adress
+   */
   public void setAdress(String adress) {
 
     if (adress == null)
@@ -66,10 +94,20 @@ public class Person {
     this.adress = adress;
   }
 
+  /**
+   * Hämtar personnummer
+   *
+   * @return
+   */
   public String getPersonnummer() {
     return personnummer;
   }
 
+  /**
+   * Sätter personnumret
+   *
+   * @param personnummer
+   */
   public void setPersonnummer(String personnummer) {
 
     if (personnummer == null)
@@ -81,6 +119,11 @@ public class Person {
     this.personnummer = personnummer;
   }
 
+  /**
+   * En egen toString
+   *
+   * @return
+   */
   @Override
   public String toString() {
     final StringBuilder sb = new StringBuilder("Person{");
